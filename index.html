@@ -5,201 +5,182 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shafrin M | Professional Portfolio</title>
   <style>
-    body {
-      font-family: "Segoe UI", Arial, sans-serif;
-      margin: 0;
-      background: #f4f6fb;
-      color: #333;
-      line-height: 1.6;
+    body{
+      margin:0;
+      font-family:Segoe UI, Arial, sans-serif;
+      background:#f5f7fb;
+      color:#222;
     }
-    header {
-      background: linear-gradient(135deg, #0a66c2, #004182);
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
+    .layout{
+      display:flex;
+      min-height:100vh;
     }
-    header h1 {
-      margin: 0;
-      font-size: 36px;
-      font-weight: bold;
+    .sidebar{
+      width:280px;
+      background: linear-gradient(180deg, #0a66c2, #083b73);
+
+      color:#fff;
+      padding:30px 20px;
     }
-    header p {
-      margin: 8px 0;
-      font-size: 18px;
+    .sidebar h1{
+      font-size:24px;
+      margin-bottom:5px;
     }
-    .btn {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 10px 20px;
-      background: #ffffff;
-      color: #0a66c2;
-      font-weight: bold;
-      border-radius: 25px;
-      text-decoration: none;
+    .sidebar p{
+      font-size:14px;
+      opacity:0.9;
     }
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 20px;
+    .sidebar hr{
+      border:none;
+      border-top:1px solid rgba(255,255,255,0.2);
+      margin:20px 0;
     }
-    section {
-      background: white;
-      margin-bottom: 20px;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    .sidebar .section-title{
+      font-size:13px;
+      letter-spacing:1px;
+      margin-bottom:8px;
+      opacity:0.8;
     }
-    h2 {
-      color: #0a66c2;
-      margin-bottom: 10px;
-      border-left: 5px solid #0a66c2;
-      padding-left: 10px;
+    .sidebar ul{
+      list-style:none;
+      padding:0;
+      margin:0 0 15px 0;
+      font-size:14px;
     }
-    ul {
-      padding-left: 20px;
+    .sidebar ul li{
+      margin-bottom:6px;
     }
-    li {
-      margin-bottom: 6px;
+    .main{
+      flex:1;
+      padding:40px;
     }
-    .highlight {
-      font-weight: bold;
-      color: #0a66c2;
+    .block{
+      background:#fff;
+      padding:25px;
+      margin-bottom:25px;
+      border-radius:10px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.06);
     }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #222;
-      color: #ccc;
-      font-size: 14px;
+    .block h2{
+      margin-top:0;
+      color:#0a66c2;
+      font-size:20px;
+      border-left:4px solid #0a66c2;
+      padding-left:10px;
     }
-    footer a {
-      color: #0a66c2;
-      text-decoration: none;
-      font-weight: bold;
+    .block ul{
+      padding-left:18px;
+    }
+    .block li{
+      margin-bottom:6px;
+    }
+    .highlight{
+      font-weight:600;
+    }
+    .btn{
+      display:inline-block;
+      margin-top:10px;
+      padding:10px 18px;
+      background:#0a66c2;
+      color:#fff;
+      text-decoration:none;
+      border-radius:6px;
+      font-size:14px;
+    }
+    @media(max-width:900px){
+      .layout{flex-direction:column;}
+      .sidebar{width:100%;}
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Shafrin M</h1>
-  <p>B.Sc Information Technology | Web & Application Developer |</p>
-  <a class="btn" href="https://www.linkedin.com/in/shafrin-muji-302b1b2b7" target="_blank">View LinkedIn Profile</a>
-</header>
+<div class="layout">
 
-<div class="container">
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <h1>Shafrin M</h1>
+    <p>B.Sc Information Technology Student</p>
+    <p>Coimbatore, Tamil Nadu</p>
 
-  <section>
-    <h2>Professional Summary</h2>
-    <p>
-      Aspiring <span class="highlight">Information Technology professional</span> with hands-on experience in 
-      <span class="highlight">Flutter app development</span> and <span class="highlight">AWS cloud fundamentals</span>. 
-      Passionate about building practical software solutions and actively seeking 
-      <span class="highlight">internship and entry-level placement opportunities</span> to contribute, learn, and grow in a professional environment.
-    </p>
-  </section>
+    <hr>
 
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I am a <span class="highlight">motivated Information Technology undergraduate</span> with hands-on experience in 
-      <span class="highlight">mobile app development</span>, <span class="highlight">cloud computing</span>, and 
-      <span class="highlight">data analysis</span>. I am actively seeking <span class="highlight">internship and placement opportunities</span> 
-      where I can apply my skills, learn from industry professionals, and grow as a software professional.
-    </p>
-  </section>
+    <div class="section-title">CONTACT</div>
+    <ul>
+      <li>Email: sharfrinmuji@gmail.com</li>
+      <li>Phone: +91 8220269997</li>
+      <li><a href="https://www.linkedin.com/in/shafrin-muji-302b1b2b7" style="color:#9ecbff;">LinkedIn Profile</a></li>
+    </ul>
 
-  <section>
-    <h2>Education</h2>
-    <p>
-      <span class="highlight">Bachelor of Science – Information Technology</span><br>
+    <div class="section-title">FOCUS AREAS</div>
+    <ul>
+      <li>App Development</li>
+      <li>Flutter & Firebase</li>
+      <li>AWS Cloud Fundamentals</li>
+      <li>Data Analysis</li>
+    </ul>
+
+    <div class="section-title">CAREER GOAL</div>
+    <p style="font-size:14px;">To secure an internship or entry-level role where I can apply my technical skills, gain industry exposure, and grow as an IT professional.</p>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="main">
+
+    <div class="block">
+      <h2>About Me</h2>
+      <p>I am a motivated <span class="highlight">Information Technology undergraduate</span> with hands-on experience in <span class="highlight">Flutter app development</span>, <span class="highlight">Firebase</span>, and <span class="highlight">AWS cloud fundamentals</span>. I am passionate about building real-world applications and actively seeking <span class="highlight">internship and placement opportunities</span>.</p>
+    </div>
+
+    <div class="block">
+      <h2>Education</h2>
+      <p><span class="highlight">Bachelor of Science – Information Technology</span><br>
       PSGR Krishnammal College for Women, Coimbatore<br>
-      <span class="highlight">2023 – 2026</span>
-    </p>
-  </section>
+      2023 – 2026</p>
+    </div>
 
-  <section>
-    <h2>Technical Skills</h2>
-    <ul>
-      <li><span class="highlight">Flutter:</span> Intermediate</li>
-      <li><span class="highlight">Python:</span> Intermediate</li>
-      <li><span class="highlight">AWS Cloud:</span> Beginner (Certified)</li>
-      <li><span class="highlight">Firebase:</span> Beginner</li>
-      <li><span class="highlight">HTML:</span> Beginner</li>
-    </ul>
-  </section>
-    <ul>
-      <li><span class="highlight">Programming:</span> Python, C (Basics), Dart, HTML</li>
-      <li><span class="highlight">App Development:</span> Flutter, Firebase</li>
-      <li><span class="highlight">Cloud:</span> AWS Cloud Fundamentals</li>
-      <li><span class="highlight">Data & Tools:</span> Data Analysis, Excel, Database Management</li>
-      <li><span class="highlight">Platforms:</span> GitHub, VS Code</li>
-    </ul>
-  </section>
+    <div class="block">
+      <h2>Projects</h2>
+      <p class="highlight">PhD Database Mobile Application (Flutter, Firebase)</p>
+      <ul>
+        <li>Developing a secure mobile app to manage PhD scholar records</li>
+        <li>Implemented authentication and real-time database updates</li>
+        <li>Designed responsive UI with reusable Flutter components</li>
+      </ul>
 
-  <section>
-    <h2>Experience / Internship</h2>
-    <p><span class="highlight">Academic Project & Technical Exposure</span></p>
-    <ul>
-      <li>Gained hands-on experience through real-time academic and technical projects</li>
-      <li>Worked with Flutter, Firebase, and cloud-based concepts during project development</li>
-      <li>Improved teamwork, problem-solving, and application design skills</li>
-    </ul>
-  </section>
+      <p class="highlight">Molecular Analysis of Bacterial DNA</p>
+      <ul>
+        <li>Performed sequence alignment and BLAST analysis</li>
+        <li>Generated mutation profiling and interpretation reports</li>
+      </ul>
+    </div>
 
-  <section>
-    <h2>Projects</h2>
-    <p><span class="highlight">PhD Database Mobile Application (Flutter, Firebase)</span></p>
-    <ul>
-      <li>Developing a secure mobile app to manage PhD scholar records</li>
-      <li>Implemented authentication and real-time database updates</li>
-      <li>Designed responsive UI with reusable Flutter components</li>
-    </ul>
+    <div class="block">
+      <h2>Internship / Experience</h2>
+      <ul>
+        <li>Worked on real-time academic and technical projects</li>
+        <li>Applied Flutter, Firebase, and cloud concepts in development</li>
+        <li>Improved teamwork, problem-solving, and application design skills</li>
+      </ul>
+    </div>
 
-    <p><span class="highlight">Molecular Analysis of Bacterial DNA</span></p>
-    <ul>
-      <li>Performed sequence alignment and BLAST analysis</li>
-      <li>Generated mutation profiling and interpretation reports</li>
-    </ul>
-  </section>
+    <div class="block">
+      <h2>Certifications</h2>
+      <ul>
+        <li>AWS Certified Cloud Practitioner – Score: 837</li>
+        <li>Coursera – R Programming (Johns Hopkins University)</li>
+        <li>NPTEL – Internet of Things</li>
+        <li>NASSCOM – Big Data Analytics</li>
+      </ul>
+    </div>
 
-  <section>
-    <h2>Certifications</h2>
-    <ul>
-      <li><span class="highlight">AWS Certified Cloud Practitioner</span> – 2025 (Score: 837)</li>
-      <li><span class="highlight">Coursera:</span> R Programming – Johns Hopkins University (2024)</li>
-      <li><span class="highlight">NPTEL:</span> Internet of Things</li>
-      <li><span class="highlight">NASSCOM:</span> Big Data Analytics</li>
-    </ul>
-  </section>
+    <div class="block">
+      <h2>Resume</h2>
+<a class="btn" href="SHAFRIN M CV.pdf" target="_blank">Download Resume (PDF)</a>
+    </div>
 
-  <section>
-    <h2>Resume</h2>
-    <p>
-      <a class="btn" href="#" onclick="alert('Add your resume PDF to this repository and link it here');">Download Resume (PDF)</a>
-    </p>
-  </section>
-    <ul>
-      <li><span class="highlight">AWS Certified Cloud Practitioner</span> – Score: 837</li>
-      <li>Coursera – R Programming (Johns Hopkins University)</li>
-      <li>NPTEL – Internet of Things</li>
-      <li>NASSCOM – Big Data Analytics</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Contact</h2>
-    <p><span class="highlight">Email:</span> sharfrinmuji@gmail.com</p>
-    <p><span class="highlight">Phone:</span> +91 8220269997</p>
-    <p><span class="highlight">Location:</span> Coimbatore, Tamil Nadu</p>
-  </section>
-
+  </div>
 </div>
-
-<footer>
-  <p>© 2026 Shafrin M | Professional Portfolio</p>
-  <p>Connect with me on <a href="https://www.linkedin.com/in/shafrin-muji-302b1b2b7" target="_blank">LinkedIn</a></p>
-</footer>
 
 </body>
 </html>
